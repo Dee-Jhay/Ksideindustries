@@ -508,7 +508,7 @@ header .container{
 .location iframe{
   width: 90%;
   border-radius: 10px;
-  margin-left: 33px;
+  margin-left: 11.5px;
 }
 
 
@@ -516,7 +516,7 @@ header .container{
 .contact{
   position: relative;
   min-height: 100vh;
-  margin: 10% 80px 0;
+  margin: 10% 0 0;
   padding: 50px 100px;
   display: flex;
   justify-content: center;
@@ -524,8 +524,8 @@ header .container{
   flex-direction: column;
   background: linear-gradient( rgba(4,9,30,0.2), rgba(4,9,30,0.6)),  url(images/tape1\ \(9\).jpg);
   background-size: cover;
-  border-radius: 15px;
 }
+
 
 .contact .content{
   max-width: 800px;
@@ -647,10 +647,11 @@ header .container{
   border: 2px solid #ff7200;
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 786px){
   .contact{
     width: 100%;
-    padding: 20px;
+    padding: 30px;
+    margin: 0 0 0;
   }
   .container1{
     flex-direction: column;
@@ -752,14 +753,19 @@ ul{
 }
 
 /* responsive*/
-@media(max-width: 1000px){
+@media screen and (max-width: 1000px){
+.footer{
+  width: 100%;
+  margin: auto;
+}
+
   .footer-col{
     width: 50%;
     margin-bottom: 30px;
   }
 }
 
-@media(max-width: 1000px){
+@media screen and (max-width: 1000px){
   .footer-col{
     width: 100%;
   }
