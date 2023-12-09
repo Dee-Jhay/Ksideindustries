@@ -647,16 +647,10 @@ header .container{
   border: 2px solid #ff7200;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 767px){
   .contact{
-    padding: 50px;
-  }
-  .contactForm .inputBox{
     width: 100%;
-    display: inline-block;
-    flex-direction: row-reverse;
-    margin-top: 2%;
-    border-radius: 7px;
+    padding: 20px;
   }
   .container1{
     flex-direction: column;
@@ -671,6 +665,9 @@ header .container{
 }
 
 
+
+
+/* footer */
 .content-wrap{
   max-width: 1170px;
   margin: auto;
@@ -767,6 +764,7 @@ ul{
     width: 100%;
   }
 }
+
 
 
 
