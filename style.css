@@ -67,11 +67,10 @@ header .container{
   align-items: center;
   width: 100%;
   padding: 2em 0;
+  
 }
 
-.navbar img{
-  width: 300px;
-}
+
 
 
 .navbar .menu{
@@ -79,7 +78,6 @@ header .container{
   justify-content: space-between;
   align-items: center;
   gap: 3em;
-  margin-top: -20%;
 }
 
 .menu-btn{
@@ -111,10 +109,6 @@ header .container{
   height: 100%;
   animation: fadeIn 0.6s ease-in;
   border-radius: 10px;
-}
-
-.navbar .buttons{
-  margin-top: -20%;
 }
 
 .title{
