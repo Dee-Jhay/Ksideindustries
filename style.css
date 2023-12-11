@@ -426,7 +426,7 @@ header .container{
 }
 
 .testimonial-col{
-  flex-basis: 44%;
+  flex-basis: 60%;
   border-radius: 10px;
   margin-bottom: 5%;
   margin: 0 20px;
