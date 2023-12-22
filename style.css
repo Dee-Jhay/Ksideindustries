@@ -426,9 +426,9 @@ header .container{
 }
 
 .testimonial-col{
-  flex-basis: 60%;
+  flex-basis: 49%;
   border-radius: 10px;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   margin: 0 20px;
   text-align: left;
   background: #999;
@@ -486,6 +486,7 @@ header .container{
   .testimonial-col{
     margin: 1em 0 4em;
     padding: 2em;
+    margin-bottom: 50%;
   }
 
 }
@@ -528,13 +529,13 @@ header .container{
 .contact .content h2{
   font-size: 36px;
   font-weight: 500;
-  color: #3f1e05;
+  color: #c05803;
 }
 .contact .content p{
-  color: #3f1e05;
+  background-color: linear-gradient( rgba(2,7,28,0.4), rgba(30, 14, 4, 0.6));
   font-weight: 500;
   font-size: 20px;
-  font-family:  Times, 'Times New Roman', serif;
+  font-family: 'Firacode';
 }
 .container1{
   width: 100%;

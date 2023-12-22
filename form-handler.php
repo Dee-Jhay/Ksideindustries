@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_body = "User Name: $username\n" .
                   "User Email: $email\n" .
                   "Phone: $phone\n" .
-                  "Message: $message\n";
+                  "Message: $message\n" 
 
     // Send the email
     $mail_success = mail($to, $subject, $email_body, $headers);
@@ -29,5 +29,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo "Oops! Something went wrong and we couldn't send your message.";
     }
-}
+}    
 ?>
