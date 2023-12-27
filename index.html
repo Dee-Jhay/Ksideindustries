@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ksideindustries</title>
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -153,7 +154,7 @@
       </div>
 
       <div class="card">
-        <img src="images/talk3.jpeg" alt="analytics" />
+        <img src="images/icon-api.svg" alt="analytics" />
         <div class="card-text">
           <h3>Cybersecurity</h3>
           <p>
@@ -291,6 +292,77 @@
     </iframe>
   </section>
 
+
+  <!----- FAQ ----->
+  <section class="FAQ">
+    <div class="accordion">
+      <div class="image-box">
+        <img src="images/icon-api.svg">
+      </div>
+      <div class="accordion-text">
+        <div class="title">Frequently Asked Questions</div>
+        <ul class="faq-text">
+        <li>
+          <div class="question-arrow">
+            <span class="question">What is Kside Industries all about?</span>
+            <i class="bx bxs-chevron-down"></i>
+          </div>
+          <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, voluptates.</p>
+          <span class="line"></span>
+        </li>
+        <li>
+          <div class="question-arrow">
+            <span class="question">What is Kside Industries all about?</span>
+            <i class="bx bxs-chevron-down"></i>
+          </div>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, sunt?</p>
+          <span class="line"></span>
+        </li>
+        <li>
+          <div class="question-arrow">
+            <span class="question">What is Kside Industries all about?</span>
+            <i class="bx bxs-chevron-down"></i>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nesciunt?</p>
+          <span class="line"></span>
+        </li>
+        <li>
+          <div class="question-arrow">
+            <span class="question">What is Kside Industries all about?</span>
+            <i class="bx bxs-chevron-down"></i>
+          </div>
+          <span class="line"></span>
+        </li>
+        <li>
+          <div class="question-arrow">
+            <span class="question">What is Kside Industries all about?</span>
+            <i class="bx bxs-chevron-down"></i>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, eligendi.</p>
+          <span class="line"></span>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    let li = document.querySelectorAll(".faq-text li");
+    for (var i = 0; i < li.length; i++) {
+      li[i].addEventListener("click", (e)=>{
+        let clickedLi;
+        if(e.target.classList.contains("question-arrow")){
+          clickedLi = e.target.parentElement;
+        }else{
+          clickedLi = e.target.parentElement.parentElement;
+        }
+        clickedLi.classList.toggle("showAnswer");
+      });
+    }
+  </script>
+
+
+
   <!--- Footer ---->
   <footer class="footer">
     <div class="content-wrap">
@@ -339,6 +411,7 @@
 
   </footer>
 
+  
   
   <!-------- JavaScript for Toggle Menu ------->
   <script>
