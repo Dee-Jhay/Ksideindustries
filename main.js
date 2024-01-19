@@ -38,3 +38,17 @@ counters.forEach(counter =>{
     //run the function initially
     updateCount();
 });
+
+function toggleCard(card, event) {
+    var cards = document.querySelectorAll('.card');
+  
+    cards.forEach(function (otherCard) {
+      if (otherCard !== card && otherCard.classList.contains('expanded')) {
+        otherCard.classList.remove('expanded');
+      }
+    });
+  
+    card.classList.toggle('expanded');
+    event.preventDefault();
+  }
+  

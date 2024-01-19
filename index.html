@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ksideindustries</title>
+  <title>Kside Industries</title>
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Merriweather:wght@300;400&family=Poppins:wght@200;300;400;500&family=Roboto+Serif:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
   integrity="sha384-wvfxpqpZZVQGK6TAh5PVlGOfQNHHSoD2xbE+QkPxCAFlNEevoEH#Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-xwvs+tBF4KH9zLsMrJgF8e4i3EC6kxGNiR1Lw0coGzNH1iAq9Y+g6N4DBg6n/m3y/CrYr4In1ZlQHFLqXTtjEg==" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -25,25 +26,7 @@
           <li><a href="#About">About</a></li>
           <li><a href="#Services">Services</a></li>
           <li><a href="#Contact">Contact us</a></li>
-          <li class="btn-list-item">
-            <a href="#" class="btn btn-secondary">
-              sign up
-            </a>
-          </li>
-          <li class="btn-list-item">
-            <a href="#" class="btn btn-primary">
-              sign in
-            </a>
-          </li>
         </ul>
-        <div class="buttons">
-          <a href="#" class="btn btn-secondary">
-            sign up
-          </a>
-          <a href="#" class="btn btn-primary">
-            sign in
-          </a>
-        </div>
         <button class="menu-btn">
           <i class="fa fa-bars"></i>
         </button>
@@ -121,11 +104,9 @@
 
   <!--- Services ---->
   <section id="Services" class="cards">
-    <h1 class="sub-header">
-      Our Services
-    </h1>
+    <h1 class="sub-header">Our Services</h1>
     <div class="container">
-      <div class="card">
+      <div class="card" onclick="toggleCard(this, event)">
         <img src="images/talk3.jpeg" alt="analytics" />
         <div class="card-text">
           <h3>Cloud Computing</h3>
@@ -139,8 +120,8 @@
         </div>
       </div>
 
-      <div class="card">
-        <img src="images/talk3.jpeg" alt="analytics" />
+      <div class="card" onclick="toggleCard(this, event)">
+        <img src="images/icon-api.svg" alt="analytics" />
         <div class="card-text">
           <h3>Integrated Programming</h3>
           <p>
@@ -153,8 +134,8 @@
         </div>
       </div>
 
-      <div class="card">
-        <img src="images/icon-api.svg" alt="analytics" />
+      <div class="card" onclick="toggleCard(this, event)">
+        <img src="images/talk3.jpeg" alt="analytics" />
         <div class="card-text">
           <h3>Cybersecurity</h3>
           <p>
@@ -166,9 +147,29 @@
           </a>
         </div>
       </div>
-
     </div>
   </section>
+
+  <script>
+    function toggleCard(card, event) {
+  var cards = document.querySelectorAll('.card');
+
+  cards.forEach(function (otherCard) {
+    if (otherCard !== card && otherCard.classList.contains('expanded')) {
+      otherCard.classList.remove('expanded');
+    }
+  });
+
+  card.classList.toggle('expanded');
+
+  // Check if the clicked element is an anchor tag
+  if (event.target.tagName.toLowerCase() === 'a') {
+    event.preventDefault();
+  }
+}
+
+
+  </script>
 
   <!-------- testimonials ------->
 
