@@ -16,6 +16,9 @@
 </head>
 
 <body>
+  <div class="Logo">
+    <img src="images/k-logo.png">
+  </div>
   <!--- home ---->
   <section id="Home" class="header">
     <div class="container">
@@ -26,6 +29,7 @@
           <li><a href="#About">About</a></li>
           <li><a href="#Services">Services</a></li>
           <li><a href="#Contact">Contact us</a></li>
+          
         </ul>
         <button class="menu-btn">
           <i class="fa fa-bars"></i>
@@ -39,9 +43,10 @@
               Welcome to KSIDE INDUSTRIES
             </h1>
             <p>
-              We are the world's best company when it comes to handling different framesworks. 
-            <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. sunt neque expedita atque eveniet quis nesciunt. Quos nulla vero consequuntur fugit nemo ad delectus a quae totam ipsa illum minus laudantium?<br> 
-            Sapiante rem omis, nam consequuntur dignissimos libero maiores, voluptaes quod accusamus doloribus.
+              Welcome to KSIDE INDUSTRIES, your ultimate destination for unparalleled expertise in handling various frameworks. We take pride in being recognized as the world's leading company in this field. Our commitment to excellence is reflected in the quality of services we provide. 
+            <br>At KSIDE INDUSTRIES, we go beyond the ordinary to deliver innovative solutions tailored to meet your unique needs. Whether it's Cloud Computing, Integrated Programming, or Cybersecurity, our team of experts is dedicated to ensuring your success.<br> 
+            Explore the possibilities with KSIDE INDUSTRIES. Request a session with us and discover how we can elevate your experience in the digital landscape. Dive deeper into who we are and what sets us apart from the rest.<br>
+            Join over 1200 satisfied clients who have experienced the excellence of our services. With over 600 successful projects delivered, we continue to push boundaries and set new standards in the industry.
             </p>
             <div class="buttons">
               <a href="#" class="btn btn-primary">
@@ -82,9 +87,11 @@
             The Company
           </h1>
           <p>
-            We are the world's best company when it comes to handling different framesworks. 
-          <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. sunt neque expedita atque eveniet quis nesciunt. Quos nulla vero consequuntur fugit nemo ad delectus a quae totam ipsa illum minus laudantium?<br> 
-          Sapiante rem omis, nam consequuntur dignissimos libero maiores, voluptaes quod accusamus doloribus.
+            Get to know us better. At KSIDE INDUSTRIES, we take pride in being the go-to company for handling various frameworks. Our journey is defined by a commitment to excellence and a passion for delivering outstanding results.
+
+            <br>As a company, we prioritize innovation, efficiency, and client satisfaction. Our team of dedicated professionals brings together diverse skills and expertise to ensure the success of every project we undertake.
+            
+            <br>Discover the KSIDE INDUSTRIES difference. Whether you're seeking a session to explore our services or want to learn more about our story, we're here to provide you with the information you need.
           </p>
           <div class="buttons">
             <a href="#" class="btn btn-primary">
@@ -104,15 +111,17 @@
 
   <!--- Services ---->
   <section id="Services" class="cards">
-    <h1 class="sub-header">Our Services</h1>
+    <div class="intro">
+      <h1 class="sub-header">Our Services</h1>
+      <p>Explore a world of possibilities with our comprehensive range of services at KSIDE INDUSTRIES. <br>Our commitment to excellence is reflected in the diverse services we offer:</p>
+    </div>
     <div class="container">
       <div class="card" onclick="toggleCard(this, event)">
         <img src="images/talk3.jpeg" alt="analytics" />
         <div class="card-text">
           <h3>Cloud Computing</h3>
           <p>
-            lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Eligendi, molestiae?
+            Unlock the potential of the cloud with our Cloud Computing services. We provide seamless integration and scalable solutions to optimize your operations.
           </p>
           <a href="#">
             Explore
@@ -125,8 +134,7 @@
         <div class="card-text">
           <h3>Integrated Programming</h3>
           <p>
-            lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Eligendi, molestiae?
+            Experience a new dimension of programming with our Integrated Programming solutions. Our experts leverage cutting-edge technologies to bring seamless integration to your projects.
           </p>
           <a href="#">
             Explore
@@ -139,8 +147,7 @@
         <div class="card-text">
           <h3>Cybersecurity</h3>
           <p>
-            lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Eligendi, molestiae?
+            Secure your digital assets with our Cybersecurity services. We offer robust solutions to safeguard your data and ensure a resilient online presence.
           </p>
           <a href="#">
             Explore
@@ -150,26 +157,31 @@
     </div>
   </section>
 
-  <script>
-    function toggleCard(card, event) {
+<script>
+  function toggleCard(card) {
   var cards = document.querySelectorAll('.card');
 
   cards.forEach(function (otherCard) {
-    if (otherCard !== card && otherCard.classList.contains('expanded')) {
+    if (otherCard !== card) {
       otherCard.classList.remove('expanded');
+      otherCard.querySelector('.toggle-btn button:first-child').style.display = 'inline-block';
+      otherCard.querySelector('.toggle-btn button:last-child').style.display = 'none';
     }
   });
 
   card.classList.toggle('expanded');
+  var showMoreBtn = card.querySelector('.toggle-btn button:first-child');
+  var showLessBtn = card.querySelector('.toggle-btn button:last-child');
 
-  // Check if the clicked element is an anchor tag
-  if (event.target.tagName.toLowerCase() === 'a') {
-    event.preventDefault();
+  if (showMoreBtn.style.display === 'none') {
+    showMoreBtn.style.display = 'inline-block';
+    showLessBtn.style.display = 'none';
+  } else {
+    showMoreBtn.style.display = 'none';
+    showLessBtn.style.display = 'inline-block';
   }
 }
-
-
-  </script>
+</script>
 
   <!-------- testimonials ------->
 
