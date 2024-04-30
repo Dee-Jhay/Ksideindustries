@@ -25,11 +25,11 @@
       <nav class="navbar">
         <a href="index.html"></a>
         <ul class="menu">
-          <li><a href="#Home">Home</a></li>
+          <li><a href="Home.html">Home</a></li>
           <li><a href="#About">About</a></li>
           <li><a href="#Services">Services</a></li>
           <li><a href="#Contact">Contact us</a></li>
-          
+          <li><a href="#Faq">FAQ</a></li>
         </ul>
         <button class="menu-btn">
           <i class="fa fa-bars"></i>
@@ -49,7 +49,7 @@
             Join over 1200 satisfied clients who have experienced the excellence of our services. With over 600 successful projects delivered, we continue to push boundaries and set new standards in the industry.
             </p>
             <div class="buttons">
-              <a href="#" class="btn btn-primary">
+              <a href="#Contact" class="btn btn-primary">
                 Request for a session
               </a>
               <a href="#" class="btn btn-secondary">
@@ -94,7 +94,7 @@
             <br>Discover the KSIDE INDUSTRIES difference. Whether you're seeking a session to explore our services or want to learn more about our story, we're here to provide you with the information you need.
           </p>
           <div class="buttons">
-            <a href="#" class="btn btn-primary">
+            <a href="#Contact" class="btn btn-primary">
               Request for a session
             </a>
             <a href="#" class="btn btn-secondary">
@@ -130,7 +130,7 @@
       </div>
 
       <div class="card" onclick="toggleCard(this, event)">
-        <img src="images/icon-api.svg" alt="analytics" />
+        <img src="images/talk3.jpeg" alt="analytics" />
         <div class="card-text">
           <h3>Integrated Programming</h3>
           <p>
@@ -149,7 +149,7 @@
           <p>
             Secure your digital assets with our Cybersecurity services. We offer robust solutions to safeguard your data and ensure a resilient online presence.
           </p>
-          <a href="#">
+          <a href="Services.html">
             Explore
           </a>
         </div>
@@ -233,7 +233,8 @@
       </div>
     </div> 
   </section>
- 
+
+  
   <!--- Contact us ---->
   <section id="Contact" class="contact">
     <div class="content">
@@ -307,7 +308,7 @@
 
 
   <!----- FAQ ----->
-  <section class="FAQ">
+  <section class="FAQ" id="Faq">
     <div class="accordion">
       <div class="image-box">
         <img src="images/icon-api.svg">
@@ -376,56 +377,58 @@
 
 
 
-  <!--- Footer ---->
-  <footer class="footer">
-    <div class="content-wrap">
-      <div class="row1">
-        <div class="footer-col">
-          <h4>Company</h4>
-          <ul>
-            <li><a href="#About">About us</a></li>
-            <li><a href="#Services">Our Services</a></li>
-            <li><a href="">privacy policy</a></li>
-            <li><a href="">Affiliate program</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Get help</h4>
-          <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Sessions</a></li>
-            <li><a href="#">returns</a></li>
-            <li><a href="#">payment options</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Online service</h4>
-          <ul>
-            <li><a href="#">consulting</a></li>
-            <li><a href="#">coaching</a></li>
-            <li><a href="#">trainings</a></li>
-            <li><a href="#">seminars</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Follow us</h4>
-          <div class="social-links">
-            <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+    <!--- Footer ---->
+    <footer class="footer">
+      <div class="content-wrap">
+        <div class="row1">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#About">About us</a></li>
+              <li><a href="#Services">Our Services</a></li>
+              <li><a href="">privacy policy</a></li>
+              <li><a href="">Affiliate program</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-col">
+            <h4>Get help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Sessions</a></li>
+              <li><a href="#">returns</a></li>
+              <li><a href="#">payment options</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-col">
+            <h4>Online service</h4>
+            <ul>
+              <li><a href="#">consulting</a></li>
+              <li><a href="#">coaching</a></li>
+              <li><a href="#">trainings</a></li>
+              <li><a href="#">seminars</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-col">
+            <h4>Follow us</h4>
+            <ul class="social-links">
+              <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
+  
+    </footer>
+  
 
-  </footer>
 
   
-  
+
   <!-------- JavaScript for Toggle Menu ------->
   <script>
     var navLinks = document.getElementById("navLinks");
