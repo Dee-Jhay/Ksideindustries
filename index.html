@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-xwvs+tBF4KH9zLsMrJgF8e4i3EC6kxGNiR1Lw0coGzNH1iAq9Y+g6N4DBg6n/m3y/CrYr4In1ZlQHFLqXTtjEg==" crossorigin="anonymous" />
 </head>
 
-<body>
+<body onload="slider()">
   <div class="carousel">
     <div class="slider">
       <img src="images/image-restaurant.jpg" id="slideImg">
@@ -50,7 +50,7 @@
         </div>   
       </div> 
       <div>
-        <a href="#Contact"><button type="button">Get Started</button></a>
+        <a href="#Contact"><button type="button" class="start">Get Started</button></a>
       </div> 
     </div>
   </div>
@@ -68,6 +68,41 @@
     });
   </script>
 
+  <script>
+  var slideImg = document.getElementById("slideImg");
+
+  var images = [
+    "images/pexels-1.jpg",
+    "images/pexels-2.jpg",
+    "images/pexels-3.jpg",
+    "images/pexels-4.jpg",
+    "images/pexels-5.jpg",
+    "images/pexels-6.jpg",
+    "images/pexels-7.jpg",
+  ];
+
+  var len = images.length;
+  var i = 0;
+
+  function slider(){
+    console.log("Setting slideImg source to: " + images[i]); // Debugging output
+     if (i > len-1){
+      i = 0;
+    }
+ 
+    slideImg.src = images[i];
+    i++;
+    
+  }
+  setInterval(slider, 3000)
+
+  // Call the slider function once the DOM is fully loaded
+  window.addEventListener("DOMContentLoaded", function() {
+    slider();
+  });
+</script>
+
+
 
 
   <!--- home ---->
@@ -83,13 +118,8 @@
         Explore the possibilities with KSIDE INDUSTRIES. Request a session with us and discover how we can elevate your experience in the digital landscape. Dive deeper into who we are and what sets us apart from the rest.<br>
         Join over 1200 satisfied clients who have experienced the excellence of our services. With over 600 successful projects delivered, we continue to push boundaries and set new standards in the industry.
         </p>
-        <div class="buttons">
-          <a href="#Contact" class="btn btn-primary">
-            Request for a session
-          </a>
-          <a href="#" class="btn btn-secondary">
-            More about us
-          </a>
+        <div>
+          
         </div>
         <div class="stats">
           <div>
@@ -124,14 +154,6 @@
             
             <br>Discover the KSIDE INDUSTRIES difference. Whether you're seeking a session to explore our services or want to learn more about our story, we're here to provide you with the information you need.
           </p>
-          <div class="buttons">
-            <a href="#Contact" class="btn btn-primary">
-              Request for a session
-            </a>
-            <a href="#" class="btn btn-secondary">
-              More about us
-            </a>
-          </div>
         </div>
       </div>
       <div class="imgwrap">
@@ -154,9 +176,7 @@
           <p>
             Unlock the potential of the cloud with our Cloud Computing services. We provide seamless integration and scalable solutions to optimize your operations.
           </p>
-          <a href="#">
-            Explore
-          </a>
+          <a href="#"><div class="cta">Explore</div></a>
         </div>
       </div>
 
@@ -167,9 +187,7 @@
           <p>
             Experience a new dimension of programming with our Integrated Programming solutions. Our experts leverage cutting-edge technologies to bring seamless integration to your projects.
           </p>
-          <a href="#">
-            Explore
-          </a>
+          <a href="#"><div class="cta-2">Explore</div></a>
         </div>
       </div>
 
@@ -180,9 +198,7 @@
           <p>
             Secure your digital assets with our Cybersecurity services. We offer robust solutions to safeguard your data and ensure a resilient online presence.
           </p>
-          <a href="Services.html">
-            Explore
-          </a>
+          <a href="#"><div class="cta-3">Explore</div></a>
         </div>
       </div>
     </div>
@@ -270,7 +286,7 @@
   <section id="Contact" class="contact">
     <div class="content">
       <h2>Contact Us</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>sunt neque expedita atque eveniet quis nesciunt.</p>
+      <p>Feel free to reach out to us for any inquiries, feedback, or collaboration opportunities.</p>
     </div>
     <div class="container1">
       <div class="contactinfo">
