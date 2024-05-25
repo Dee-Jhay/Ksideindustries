@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kside Industries</title>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,7 +87,7 @@
     var i = 0;
 
     function slider(){
-      console.log("Setting slideImg source to: " + images[i]); // Debugging output
+      // console.log("Setting slideImg source to: " + images[i]); // Debugging output
       if (i > len-1){
         i = 0;
       }
@@ -145,7 +146,7 @@
             The Company
           </h1>
           <p>
-            Get to know us better. At KSIDE INDUSTRIES, we take pride in being the go-to company for handling various frameworks. Our journey is defined by a commitment to excellence and a passion for delivering outstanding results.
+            At KSIDE INDUSTRIES, we are the go-to company for handling various frameworks. Our journey is defined by a commitment to excellence and a passion for delivering outstanding results.
 
             <br>As a company, we prioritize innovation, efficiency, and client satisfaction. Our team of dedicated professionals brings together diverse skills and expertise to ensure the success of every project we undertake.
             
@@ -211,44 +212,50 @@
     <div class="row">
       <div class="testimonial-col">
         <img src="images/tape1 (6).jpg">
-        <div>
+        <div class="span">
+          <div>
+            <h3>Christie Macron</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>sunt neque expedita atque eveniet quis nesciunt. <br>Quos nulla vero consequuntur fugit nemo ad delectus
           </p>
-          <h3>Christie Macron</h3>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-o"></i>
-        </div>
+        </div> 
       </div> 
     
       <div class="testimonial-col">
         <img src="images/tape1 (4).jpg">
-        <div>
+        <div class="span">
+          <div>
+            <h3>Benson George</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>sunt neque expedita atque eveniet quis nesciunt. <br>Quos nulla vero consequuntur fugit nemo ad delectus
           </p>
-          <h3>Benson George</h3>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-half-o"></i>         
-        </div> 
+        </div>
       </div>
 
       <div class="testimonial-col">
         <img src="images/tape1 (6).jpg">
-        <div>
+        <div class="span">
+          <div>
+            <h3>Marie Claire</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>sunt neque expedita atque eveniet quis nesciunt. <br>Quos nulla vero consequuntur fugit nemo ad delectus
           </p>
-          <h3>Marie Claire</h3>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star-half-o"></i>         
-        </div> 
+        </div>
       </div>
     </div> 
   </section>
@@ -311,13 +318,36 @@
             <span>Type your Message...</span>
           </div>
           <div class="inputbox1">
-            <input type="submit" onclick="formSubmit()" value="submit">
+            <input type="submit"  value="submit">
       
           </div>
         </form>
       </div>
     </div>
   </section>
+
+  <script>
+   (function() {
+         
+            emailjs.init({
+              publicKey: "yRMawSLmO02pEFtKU",
+            });
+        })();
+ 
+   const form = document.querySelector("#myForm");
+  //  console.log(form);
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    console.log("hello");
+    emailjs.sendForm('service_3uzsklr', 'template_swthtyn', form)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+  })
+  </script>
 
   <!--- Location ---->
   <section class="location">

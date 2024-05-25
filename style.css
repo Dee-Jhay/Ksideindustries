@@ -173,7 +173,7 @@ i {
   margin: 100px auto 0;
   text-align: center;
   color: #ff7200;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'poppins';
 }
 
 .pop-up h1 {
@@ -219,14 +219,13 @@ i {
 .start {
   width: 150px;
   text-align: center;
-  background: linear-gradient(rgb(300, 154, 3), rgba(0, 0, 0, 0.7));
+  background: #ff7200;
   color: #fff;
   cursor: pointer;
   border-radius: 25px;
-  margin: 30px 540px;
+  margin: 30px 465px;
   padding: 10px 0;
   font-weight: bold;
-  border: 2px solid #ff7200;
   transition: background 0.5s;
 }
 
@@ -279,6 +278,7 @@ header .container {
   min-height: 80vh;
   display: flex;
   flex-direction: row;
+  text-align: justify;
   gap: 200px;
   justify-content: space-between;
 }
@@ -287,7 +287,7 @@ header .container {
   font-weight: 400;
   line-height: 27px;
   max-width: 800px;
-  font-size: 18px;
+  font-size: 13px;
   margin-top:  20px;
 }
 
@@ -340,12 +340,13 @@ header .container {
 .sub-heading {
   font-size: 24px;
   line-height: 70px;
-  font-family: Cambria, Cochin, serif;
+  font-family: 'poppins';
   color: #ff7200;
 }
 
 .header2 p {
-  font-size: 18px;
+  font-size: 13px;
+  text-align: justify;
   line-height: 27px;
   max-width: 450px;
   margin-right: 1em;
@@ -436,7 +437,7 @@ header .container {
   line-height: 60px;
   text-align: center;
   color: #ff7200;
-  font-family: Cambria, Cochin, Georgia, Times, serif;
+  font-family: 'poppins';
 }
 
 .cards .container {
@@ -457,7 +458,8 @@ header .container {
 
 .cards .intro p {
   color: #000;
-  font-weight: 450;
+  font-family: 'poppins';
+  font-weight: 400;
   text-align: center;
   margin: 1em;
   margin-bottom: -4%;
@@ -477,9 +479,11 @@ header .container {
 .card p,
 .card-text p {
   margin: 1em 0;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 13px;
+  line-height: 22px;
   font-family: 'poppins';
+  font-weight: 400;
+  text-align: justify;
 }
 
 .card:hover img {
@@ -561,8 +565,8 @@ header .container {
 
 .card h3 {
   color: #ff7200;
-  font-size: 1.3em;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+  font-family: 'poppins';
 }
 
 @keyframes fadeIn {
@@ -728,7 +732,6 @@ header .container {
   padding-bottom: 10px;
   cursor: pointer;
   display: flex;
-  flex-direction: row;
 }
 
 .testimonial-col img {
@@ -748,16 +751,14 @@ header .container {
 .testimonial-col p {
   padding: 0;
   margin: 0 10px;
-  font-size: 12px;
+  font-size: 10px;
   font-family: poppins;
-  display: flex;
-  flex-direction: column-reverse;
 }
 
-.testimonial-col h3 {
-  margin: 10px 9px;
-  text-align: left;
+.testimonial-col .span h3 {
+  margin: 1px 15px;
   font-family: Arial, sans-serif;
+  
 }
 
 .testimonial-col .fa {
