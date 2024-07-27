@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
   integrity="sha384-wvfxpqpZZVQGK6TAh5PVlGOfQNHHSoD2xbE+QkPxCAFlNEevoEH#Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-xwvs+tBF4KH9zLsMrJgF8e4i3EC6kxGNiR1Lw0coGzNH1iAq9Y+g6N4DBg6n/m3y/CrYr4In1ZlQHFLqXTtjEg==" crossorigin="anonymous" />
-</head>
 
 <body onload="slider()">
 
@@ -130,7 +129,6 @@
         </div>
         <div class="imgstart">
           <img src="images/talk2.jpeg" alt="imgwrap" />
-           
         </div>
       </div>
     </div>    
@@ -185,7 +183,7 @@
           <p>
             Experience a new dimension of programming with our Integrated Programming solutions. Our experts leverage cutting-edge technologies to bring seamless integration to your projects.
           </p>
-          <a href="#"><div class="cta-2">Explore</div></a>
+          <a href="#"><div class="cta">Explore</div></a>
         </div>
       </div>
 
@@ -196,7 +194,7 @@
           <p>
             Secure your digital assets with our Cybersecurity services. We offer robust solutions to safeguard your data and ensure a resilient online presence.
           </p>
-          <a href="#"><div class="cta-3">Explore</div></a>
+          <a href="#"><div class="cta">Explore</div></a>
         </div>
       </div>
     </div>
@@ -318,7 +316,7 @@
             <span>Type your Message...</span>
           </div>
           <div class="inputbox1">
-            <input type="submit"  value="submit">
+            <input type="submit" onclick="sendMail()" value="submit">
       
           </div>
         </form>
@@ -341,11 +339,11 @@
     e.preventDefault();
     console.log("hello");
     emailjs.sendForm('service_3uzsklr', 'template_swthtyn', form)
-                    .then(() => {
-                        console.log('SUCCESS!');
-                    }, (error) => {
-                        console.log('FAILED...', error);
-                    });
+    .then(() => {
+        console.log('SUCCESS!');
+    }, (error) => {
+        console.log('FAILED...', error);
+    });
   })
   </script>
 
@@ -531,6 +529,7 @@
     updateCount();
     });
   </script>
-  
+
+
 </body>
 </html>

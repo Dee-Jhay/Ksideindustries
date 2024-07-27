@@ -1,12 +1,12 @@
 body {
-  font-family: 'poppins', sans-serif;
-  background: rgb(243, 242, 242);
+  font-family: 'poppins';
+  background: black;
 }
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'poppins', sans-serif;
+  font-family: 'poppins';
   box-sizing: border-box;
 }
 
@@ -117,7 +117,11 @@ html {
 
 /* Scrolled navbar styles */
 .navbar.scrolled {
-  background-color: rgba(0,0,0,0.7);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   position: fixed;
   align-items: center;
   display: flex;
@@ -249,7 +253,11 @@ i {
   width: 100%;
   height: 100%;
   border-radius: 5px;
+  border: 1px solid #cccccc;
+  overflow: hidden;
+  background: #ffffff;
 }
+
 
 header {
   margin-bottom: 4em;
@@ -284,6 +292,7 @@ header .container {
 }
  
 .header-bodys p {
+  color: #fff;
   font-weight: 400;
   line-height: 27px;
   max-width: 800px;
@@ -295,6 +304,7 @@ header .container {
 .stats {
   display: flex;
   align-items: center;
+  color: #fff;
 }
 
 .stats>div {
@@ -303,6 +313,7 @@ header .container {
 
 .stats h1 {
   font-size: 2em;
+  color: #fff;
 }
 
 .stats p {
@@ -310,10 +321,11 @@ header .container {
   font-size: 0.9em;
   color: #ff7200;
   font-weight: 500;
+  font-family: 'poppins';
 }
 
 .line {
-  background: #000;
+  background: #fff;
   margin-bottom: 10px;
   width: 2px;
   height: 50px; 
@@ -331,8 +343,8 @@ header .container {
 }
 
 .imgwrap img {
-  width: 80%;
-  height: 80%;
+  width: 68%;
+  height: 65%;
   border-radius: 5px;
   margin-top: 10%;
 }
@@ -346,8 +358,9 @@ header .container {
 
 .header2 p {
   font-size: 13px;
+  color: #fff;
   text-align: justify;
-  line-height: 27px;
+  line-height: 21px;
   max-width: 450px;
   margin-right: 1em;
   margin-top: -5px;
@@ -457,7 +470,7 @@ header .container {
 }
 
 .cards .intro p {
-  color: #000;
+  color: #fff;
   font-family: 'poppins';
   font-weight: 400;
   text-align: center;
@@ -470,6 +483,7 @@ header .container {
   padding: 2em;
   border-radius: 15px;
   cursor: pointer;
+  border: 2px solid #ff7200;
 }
 
 .card p {
@@ -488,6 +502,11 @@ header .container {
 
 .card:hover img {
   transform: translateY(-2em);
+  border: 2px solid #ff7200;
+}
+
+.card img{
+  border: 2px solid #fff;
 }
 
 .card a i {
@@ -495,7 +514,7 @@ header .container {
 }
 
 .cta{
-  width: 150px;
+  width: 100px;
   margin-top: 50px;
   margin-left: -5px;
   top: 0;
@@ -503,7 +522,7 @@ header .container {
   text-align: center;
   background: #ff7200;
   cursor: pointer;
-  border-radius: 25px;
+  border-radius: 100%;
   padding: 10px 0;
   font-weight: 400;
   border: 2px solid #ff7200;
@@ -511,52 +530,6 @@ header .container {
 }
 
 .cta:hover{
-  color: #ff7200;
-  background: transparent;
-  border: 2px solid #fdfcfc;
-  font-weight: 500;
-}
-
-.cta-2{
-  width: 150px;
-  margin-top: 5px;
-  margin-left: -5px;
-  top: 0;
-  color: #fff;
-  text-align: center;
-  background: #ff7200;
-  cursor: pointer;
-  border-radius: 25px;
-  padding: 10px 0;
-  font-weight: 400;
-  border: 2px solid #ff7200;
-  transition: background 0.5s;
-}
-
-.cta-2:hover{
-  color: #ff7200;
-  background: transparent;
-  border: 2px solid #fdfcfc;
-  font-weight: 500;
-}
-
-.cta-3{
-  width: 150px;
-  margin-top: 75px;
-  margin-left: -5px;
-  top: 0;
-  color: #fff;
-  text-align: center;
-  background: #ff7200;
-  cursor: pointer;
-  border-radius: 25px;
-  padding: 10px 0;
-  font-weight: 400;
-  border: 2px solid #ff7200;
-  transition: background 0.5s;
-}
-
-.cta-3:hover{
   color: #ff7200;
   background: transparent;
   border: 2px solid #fdfcfc;
@@ -699,7 +672,7 @@ header .container {
   }
 }
 
-/*------- testimonials ------*/
+/*------- Reviews ------*/
 
 .testimonials {
   width: 80%;
@@ -709,7 +682,7 @@ header .container {
 }
 
 .testimonials p {
-  color: #000;
+  color: #fff;
   font-weight: 450;
 }
 
@@ -723,7 +696,7 @@ header .container {
   flex-basis: 49%;
   border-radius: 10px;
   margin-bottom: 10%;
-  margin: 0 20px;
+  margin: 0 15px;
   text-align: left;
   background: #fdfcfc;
   border: 1px solid #ff7200;
@@ -749,15 +722,22 @@ header .container {
 }
 
 .testimonial-col p {
-  padding: 0;
+  padding: 0px;
+  color: #000;
   margin: 0 10px;
+  line-height: 12px;
   font-size: 10px;
-  font-family: poppins;
+  font-family: 'poppins';
+  text-align: justify;
 }
 
+ 
+
+
 .testimonial-col .span h3 {
-  margin: 1px 15px;
-  font-family: Arial, sans-serif;
+  margin: 1px 10px;
+  font-family: 'poppins';
+  font-size: 15px;
   
 }
 
