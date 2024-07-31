@@ -403,7 +403,7 @@ header .container {
   }
 
   .content .menu-btn{
-    display: flex;
+    display: f+lex;
     justify-content: space-between;
   }
 
@@ -507,10 +507,12 @@ header .container {
   }
 
   .Logo {
-    position: relative;
+    position: absolute;
     height: 15px;
     width: 15px;
     margin-top: 60px;
+    display: flex;
+    justify-content: center;
   }
 
   .start{
@@ -812,6 +814,7 @@ header .container {
   display: flex;
 }
 
+
 .testimonial-col img {
   height: 40px;
   margin-left: 5px;
@@ -830,6 +833,7 @@ header .container {
   padding: 0px;
   color: #000;
   margin: 0 10px;
+  display: flex;
   line-height: 12px;
   font-size: 10px;
   font-family: 'poppins';
