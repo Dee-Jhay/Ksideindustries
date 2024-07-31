@@ -396,20 +396,20 @@ header .container {
 
   .menu-btn {
     display: block;
-    margin-top: -26px;
     color: #ff7200;
     font-size: 30px; 
     cursor: pointer;
   }
 
   .content .menu-btn{
-    display: f+lex;
+    display: flex;
     justify-content: space-between;
+    margin: 0;
   }
 
   .navbar.scrolled .menu-btn{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0;
   }
 
@@ -510,7 +510,7 @@ header .container {
     position: absolute;
     height: 15px;
     width: 15px;
-    margin-top: 60px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
   }
@@ -529,7 +529,7 @@ header .container {
   }
 
   .pop-up h1{
-    font-size: 20px;
+    font-size: 19px;
     font-family: 'poppins';
     margin-top: 35%;
     line-height: 30px;
@@ -538,11 +538,14 @@ header .container {
   .pop-up h3{
     line-height: 20px;
     font-family: 'poppins';
+    letter-spacing: 1px;
   }
 
   .imgstart img{
-    display: block;
+    display: flex;
     width: 100%;
+    margin-top: -50%;
+
   }
 
   .header-bodys {
@@ -557,15 +560,24 @@ header .container {
   }
 
   .header-bodys p {
-    max-width: 90%;
+    max-width: 98%;
     font-size: 18px;
     text-align: justify;
-    margin-left: 19px;
+    margin: 0;
+    padding: 0;
   }
 
   .head-tag{
     margin-left: 20px;
     margin-top: 30px;
+  }
+
+  .Tag {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    justify-content: space-between;
   }
 
   .stats {
@@ -574,8 +586,7 @@ header .container {
     flex-direction: row;
     text-align: center;
     gap: 20px;
-    margin-left: 15px;
-    margin-bottom: -160px;
+    justify-content: space-between;
   }
 
   .stats > div {
@@ -583,11 +594,18 @@ header .container {
   }
 
   .stats p {
-    font-size: 18px;
+    font-size: 16px;
     margin: 0;
     font-weight: 500;
+    display: flex;
+    justify-content: center;
     font-family: 'poppins';
     white-space: nowrap;
+  }
+
+  .stats h2{
+    font-family: 'poppins';
+    font-size: 26px;
   }
   
 }
@@ -796,7 +814,6 @@ header .container {
 .testimonials h1 {
   color: #ff7200;
   font-family: Cambria, serif;
-
 }
 
 .testimonial-col {
