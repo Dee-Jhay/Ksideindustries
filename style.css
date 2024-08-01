@@ -505,6 +505,7 @@ header .container {
     width: 100%;
     height: auto;
     margin-top: 4%;
+    margin-left: 0;
     flex-direction: column;
   }
 
@@ -1120,6 +1121,7 @@ header .container {
   }
 
   .container1 {
+    display: flex;
     flex-direction: column;
   }
 
@@ -1127,9 +1129,15 @@ header .container {
     margin-bottom: 40px;
   }
 
-  .container1 .contactinfo,
+  .container1 .contactinfo, 
   .contactForm {
     width: 100%;
+  }
+
+  .inputBox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;  
   }
 
   .inputBox:hover{
